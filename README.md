@@ -29,7 +29,7 @@ The analysis includes data cleaning, visualization, and statistical hypothesis t
 │   └── traffic_types.png                # Distribution of traffic types
 │
 ├── data/                                # Dataset files
-│   ├── android_traffic-not_clean.csv    # Original dataset before cleaning
+│   ├── android_traffic-not clean.csv    # Original dataset before cleaning
 │   └── android_traffic_clean.csv        # Clean dataset for analysis
 │
 ├── docs/                                # Documentation
@@ -38,7 +38,8 @@ The analysis includes data cleaning, visualization, and statistical hypothesis t
 │   └── DT4003 Maths for Data Science Assessment.md                                 # Assessment specification
 │
 ├── analyse_data.py                      # Python script for data analysis and visualization
-└── clean_data.py                        # Python script for data preprocessing
+├── clean_data.py                        # Python script for data preprocessing
+└── requirements.txt                     # Python package dependencies
 ```
 
 ## Documentation
