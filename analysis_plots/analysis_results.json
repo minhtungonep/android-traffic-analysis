@@ -1,0 +1,56 @@
+{
+  "hypothesis_one": {
+    "conditional_probability": "78.70429762668377",
+    "total_meeting_condition": "1559",
+    "benign_meeting_condition": "1227",
+    "malicious_meeting_condition": "332",
+    "hypothesis_threshold": "9",
+    "statistical_test": {
+      "p_value": 0.0,
+      "test_statistic": "0.7870429762668377",
+      "success_ratio": "0.7870429762668377",
+      "hypothesis_threshold": "0.09",
+      "reject_null": "True",
+      "test_type": "binomial",
+      "alternative": "greater"
+    }
+  },
+  "hypothesis_two": {
+    "benign_stats": {
+      "count": "4700",
+      "mean": 21095.696170212766,
+      "median": 5562.0,
+      "std": 102862.92755032948,
+      "min": 0,
+      "max": 4226790,
+      "q1": 1315.0,
+      "q3": 17740.75
+    },
+    "malicious_stats": {
+      "count": "3133",
+      "mean": 9767.224385572934,
+      "median": 1435.0,
+      "std": 31515.254774490397,
+      "min": 0,
+      "max": 726286,
+      "q1": 0.0,
+      "q3": 6115.0
+    },
+    "differences": {
+      "mean_difference": 11328.471784639833,
+      "median_difference": 4127.0,
+      "mean_ratio": 2.159845554625836,
+      "median_ratio": 3.87595818815331
+    },
+    "statistical_test": {
+      "p_value": 2.8529408738549934e-166,
+      "test_statistic": 10053681.0,
+      "reject_null": "True",
+      "test_type": "mannwhitney",
+      "alternative": "two-sided",
+      "cles": 0.6769779492159645,
+      "cles_sampled": true
+    }
+  },
+  "timestamp": "2025-05-18 18:13:57"
+}

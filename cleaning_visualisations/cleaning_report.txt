@@ -1,0 +1,36 @@
+Android Traffic Data Cleaning Report
+===================================
+
+Encoding used: cp1252
+
+Original data shape: 7845 rows, 18 columns
+Cleaned data shape: 7833 rows, 18 columns
+Rows removed: 12
+
+Columns Renamed:
+  - 'vulume_bytes' -> 'volume_bytes'
+  - 'date ' -> 'date'
+
+Type Standardisation:
+  - Original values: ['benign', 'benign####', '?????benign', 'malicious', 'benign &*()', 'Notsure']
+  - Standardised values: ['benign', 'malicious', 'unknown']
+
+Non-numeric Values Found:
+  - Column 'dist_port_tcp': 20 non-numeric values
+    Examples: ['FALSE', ' True13']
+  - Column 'external_ips': 5 non-numeric values
+    Examples: ['jhgjftygujbhb1', ',,,,,,,,,,10', 'É,,,pluhjbv hgv12', '?????????????5', '?????????????3']
+  - Column 'udp_packets': 48 non-numeric values
+    Examples: ['????????????/', '#########']
+  - Column 'tcp_urg_packet': 79 non-numeric values
+    Examples: ['#########', '????????????/', 'nan']
+
+Missing Values by Column:
+  - dist_port_tcp: 20 missing values
+  - external_ips: 5 missing values
+  - udp_packets: 48 missing values
+  - tcp_urg_packet: 79 missing values
+  - duracion: 7845 missing values
+  - avg_local_pkt_rate: 7845 missing values
+  - avg_remote_pkt_rate: 7845 missing values
+  - date: 2949 missing values
